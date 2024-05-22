@@ -43,10 +43,15 @@ body{
     width: 18rem;
     border: none;
     border-radius: 1rem;
+    transition: .3s;
+}
+
+#input-newTask:focus{
+    box-shadow: 0 5px 15px rgba(137, 130, 130, 0.55);
 }
 
 #btn-add{
-    background-color: #3bc587;
+    background-color: rgb(59, 197, 135);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -56,7 +61,7 @@ body{
 }
 
 #btn-add:hover{
-    background-color: #3da375;
+    background-color: rgb(61, 163, 117);
     color: #dcece4; 
 }
 
@@ -79,13 +84,13 @@ body{
     background-color: rgb(255, 255, 255);
     height: 2rem;
     border-radius: 10px;
-    
 }
+
+
 
 .completed{
     text-decoration: line-through;
-    color: #3da375;
-    
+    color: #e7eae9;
 }
 
 p {
@@ -94,6 +99,7 @@ p {
     overflow-wrap: break-word; 
     white-space: normal; /* Garante que o texto respeite as quebras de linha */
     margin: 0;
+    transition: .3s;
 }
 
 li div {
@@ -108,7 +114,35 @@ li div button {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    background-color: transparent;
 }
+
+.bi-trash{
+   color: brown; 
+   transition: .3s;
+}
+
+.bi-trash:hover{
+   width: 28px;
+   height: 28px;
+}
+
+
+.bi-check{
+    color: rgb(12, 77, 48);
+    transition: .3s;
+}
+
+.bi-check:hover{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
 
 
 
