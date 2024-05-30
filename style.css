@@ -87,7 +87,6 @@ body{
 }
 
 
-
 .completed{
     text-decoration: line-through;
     color: #e7eae9;
@@ -136,6 +135,37 @@ li div button {
 .bi-check:hover{
     width: 40px;
     height: 40px;
+}
+
+
+@media screen and (max-width: 680px) {
+    
+    #to-do-list li{
+        width: 390px;
+    }
+
+    #to-do-list{
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 455px) {
+    
+    .add-item{
+        flex-direction: column;
+    }
+
+    #input-newTask{
+        width: 16rem;
+        height: 40px;
+    }
+
+    #to-do-list li{
+        width: 80vw;
+        height: 50px;
+    }
 }
 
 
